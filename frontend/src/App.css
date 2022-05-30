@@ -13,13 +13,22 @@
   height: 4rem;
 }
 
-.Home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-    height: 100%;
+.cardComp {
+  margin-bottom: 1rem;
 }
 
+.Home {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1rem;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+.Home div.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation1 {
+  height: fit-content;
+}
 .LogoBlog {
   height: 3rem;
   width: 3rem;

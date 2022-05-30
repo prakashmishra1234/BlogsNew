@@ -17,3 +17,24 @@ exports.getAllPosts = async (req, res) => {
     posts,
   });
 };
+
+//Update post
+exports.updatepost = async (req, res, next) => {
+  let post = await Post.findById(req.params.id);
+  if (!post) {
+    res.status(500).json({
+      success: false,
+      message: "post not found",
+    });
+  }
+  post = await Post.findByIdAndUpdate(req.params.id, req.body, {
+    new: true,
+    runValidators: true,
+    useFindAndModify: false,
+  });
+  res.status(200).json({
+    success: true,
+    message: "post updated",
+    post,
+  });
+};
