@@ -9,5 +9,5 @@ dotenv.config({ path: "backend/config/config.env" });
 connectDataBase();
 
 app.listen(process.env.PATH, () => {
-  console.log(`server working on http://localhost:${process.env.PORT}`);
+  console.log(`server working on http://localhost:${process.env.PATH}`);
 });
