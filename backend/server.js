@@ -9,5 +9,5 @@ dotenv.config({ path: "backend/config/config.env" });
 connectDataBase();
 
 app.listen(process.env.PATH || 8080, () => {
-  console.log(`server is working `);
+  console.log(`server is running `);
 });

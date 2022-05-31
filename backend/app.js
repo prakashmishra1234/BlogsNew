@@ -17,6 +17,6 @@ app.use(express.json());
 //Route Imports
 const posts = require("./routes/postRoute");
 
-app.use("/", posts);
+app.use("/api/v1", posts);
 
 module.exports = app;
