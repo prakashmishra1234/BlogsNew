@@ -8,7 +8,7 @@
     "start": "node backend/server.js",
     "dev": "nodemon backend/server.js"
   },
-  "author": "",
+  "author": "Prakash Mishra",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
