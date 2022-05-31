@@ -8,6 +8,8 @@ dotenv.config({ path: "backend/config/config.env" });
 //connecting to database
 connectDataBase();
 
-app.listen(process.env.PORT, () => {
+let PORT = process.env.PORT;
+
+app.listen(PORT, () => {
   console.log(`server is running `);
 });
